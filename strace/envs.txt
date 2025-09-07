@@ -1,0 +1,20 @@
+/nix/store/kl0isn5bpy59aw3mkrsr32m76bqkpa6g-qt-bug-QIcon-fromTheme-invisible-tray-icon-0.0.1/bin/qt_invisible_system_tray_icon
+
+...
+# ------------------------------------------------------------------------------------
+# The C-code for this binary wrapper has been generated using the following command:
+
+
+makeCWrapper '/nix/store/kl0isn5bpy59aw3mkrsr32m76bqkpa6g-qt-bug-QIcon-fromTheme-invisible-tray-icon-0.0.1/bin/.qt_invisible_system_tray_icon-wrapped' \
+    --inherit-argv0 \
+    --prefix 'QT_PLUGIN_PATH' ':' '/nix/store/fhl6xl7cc9g2wbnbz54av6h9p2zb0gf0-qtbase-6.9.0-only-plugins-qml/lib/qt-6/plugins' \
+    --prefix 'QT_PLUGIN_PATH' ':' '/nix/store/j61xrzipvsyzxlrif4fdrm78r6xklb7j-qtwayland-6.9.0-only-plugins-qml/lib/qt-6/plugins' \
+    --prefix 'NIXPKGS_QT6_QML_IMPORT_PATH' ':' '/nix/store/j61xrzipvsyzxlrif4fdrm78r6xklb7j-qtwayland-6.9.0-only-plugins-qml/lib/qt-6/qml' \
+    --prefix 'QT_PLUGIN_PATH' ':' '/nix/store/l9kvcx3wna1bla7xpy1629hawjqmna4y-qtbase-6.9.0/lib/qt-6/plugins' \
+    --prefix 'QT_PLUGIN_PATH' ':' '/nix/store/jqg124f64p9ii872jvzv2wgd47m86346-qtsvg-6.9.0/lib/qt-6/plugins' \
+    --prefix 'XDG_DATA_DIRS' ':' '/nix/store/kl0isn5bpy59aw3mkrsr32m76bqkpa6g-qt-bug-QIcon-fromTheme-invisible-tray-icon-0.0.1/share'
+
+
+# (Use `nix-shell -p makeBinaryWrapper` to get access to makeCWrapper in your shell)
+# ------------------------------------------------------------------------------------
+...
