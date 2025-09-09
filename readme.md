@@ -58,6 +58,8 @@ qt_invisible_system_tray_icon asdf
 
 ## debug
 
+### qt_find_icons
+
 [src/qt_find_icons.cpp](src/qt_find_icons.cpp)
 
 ```
@@ -81,4 +83,39 @@ Found candidates:
  - "/nix/store/d9xgvsah5g04sq33hvr52ahwddp84l8v-qt-bug-QIcon-fromTheme-invisible-tray-icon-0.0.1/share/icons/hicolor/scalable/apps/koi_tray.png"
  - ":/resources/icons/koi_tray.svg"
  - ":/resources/icons/koi_tray.png"
+```
+
+### qt_find_icons --compare
+
+```
+$ qt_find_icons --compare
+Searching for icon name: "koi_tray"
+QIcon theme name: "breeze"
+QIcon theme search paths:
+  /home/user/.local/share/icons
+  /nix/store/kl0isn5bpy59aw3mkrsr32m76bqkpa6g-qt-bug-QIcon-fromTheme-invisible-tray-icon-0.0.1/share/icons
+  /nix/store/8ahhl2p7chd2zzl2p7x3g91fvspzcida-breeze-icons-6.15.0/share/icons
+  /nix/store/7vgf0b2acfb82c8c7zg5hkb6b39wjnjl-cups-2.4.11/share/icons
+  /nix/store/f71v6zfm910azqhi7s809d29c55kygss-dolphin-25.04.2/share/icons
+  /nix/store/2gqw3wp905k3w4c1s3j4mwdy00yxys3p-plasma-workspace-6.4.0/share/icons
+  /nix/store/5fxsv081nn846i333p69wjnr6ndpncs5-kwin-6.4.0/share/icons
+  /nix/store/96wqq7dxi9gl7b3amjfk3wj9rwfkyrs0-breeze-6.4.0/share/icons
+  /nix/store/j4d0gsk5qbixm5hnpwffbr0bzdzgl2s4-oxygen-icons-6.1.0/share/icons
+  /run/current-system/sw/share/icons
+  /home/user/.icons
+  :/icons
+Found candidates:
+ - "/nix/store/kl0isn5bpy59aw3mkrsr32m76bqkpa6g-qt-bug-QIcon-fromTheme-invisible-tray-icon-0.0.1/share/icons/hicolor/scalable/apps/koi_tray.svg"
+ - "/nix/store/kl0isn5bpy59aw3mkrsr32m76bqkpa6g-qt-bug-QIcon-fromTheme-invisible-tray-icon-0.0.1/share/icons/hicolor/scalable/apps/koi_tray.png"
+ - ":/resources/icons/koi_tray.svg"
+ - ":/resources/icons/koi_tray.png"
+
+Comparing to QIcon::fromTheme(...) pixmap:
+  fromTheme().isNull() = false
+  available sizes = QList(QSize(16, 16), QSize(22, 22), QSize(32, 32), QSize(48, 48), QSize(64, 64), QSize(128, 128), QSize(256, 256))
+  using compare size = 16
+  DIFFER: "/nix/store/kl0isn5bpy59aw3mkrsr32m76bqkpa6g-qt-bug-QIcon-fromTheme-invisible-tray-icon-0.0.1/share/icons/hicolor/scalable/apps/koi_tray.svg" -> 41.4063% pixels equal
+  DIFFER: "/nix/store/kl0isn5bpy59aw3mkrsr32m76bqkpa6g-qt-bug-QIcon-fromTheme-invisible-tray-icon-0.0.1/share/icons/hicolor/scalable/apps/koi_tray.png" -> 40.2344% pixels equal
+  DIFFER: ":/resources/icons/koi_tray.svg" -> 41.4063% pixels equal
+  DIFFER: ":/resources/icons/koi_tray.png" -> 40.2344% pixels equal
 ```
